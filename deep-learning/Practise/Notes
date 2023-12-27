@@ -1,0 +1,18 @@
+*Checking user and email of git in local machine
+	>>git config user.name
+	>>git config user.email
+	*we can modify or assign email/user
+	>>git config --global user.name "bharath143775"
+	>>git config --global user.email "bharath143775@gmail.com"
+*clone a repo into local machine
+	>>git clone <URL>    # for private repos use personal access token in URL before github as <token@github.com>
+*Create a directory and intialize it as repo
+	>>mkdir my_first
+	>> cd my_first
+	>>git status #before intialize check whether it is in any repo and then intialize if it is not in any repo
+	>>git init
+	>>git add .  #push all files to stagging.in place of "." we can provide file names using space separated.
+	>>git commit - m "message"    # commit files to repo and add any message for the commit.
+*Check Logs of git
+	>>git log
+	>>git log --oneline   # we can get commit id's in single line 
