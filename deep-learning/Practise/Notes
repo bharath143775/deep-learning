@@ -34,4 +34,45 @@
 		>>git remote add origin <URL>
 		>>git push -u origin master/main
 	>>git branch -M <new name>    #rename current branch name to new name
+*working on branches
+	>>git branch    #checks all  branhes in repo
+	>>git branch <new>    # create a new branch with name new
+	>>git log     #displays all logs
+	>>git switch <name>   #used to switch from current branch to name
+	>>git branch -m <new_name>    #changes current branch name to new_name
+	>>git branch -D <name>  #deletes the branch from repo
+*check differences in files before commiting to previous commited file
+	>>git diff
+	>>git diff branch1 branch2
+*checkout is used to point head to various commit/branch
+	>>git checkout branch/<Hashvalue of commit>   # can move to specific commit
+	>>git checkout to master   #comes to latest commit in main branch
+	#this helps to move to specific, So that developers create new things at that commit by creating branches.
+*restore
+	>>git restore <filename>   #can be traced back to previous pointed by head
+	>>git restore --source HEAD~N <file>    #can be traced ro previous nth commit
+	>>git restore --staged <file>
+*reset
+	>>removes commit after the selected commit hash
+	>>git reset ####
+	>>git reset --hard ####    #removes commit and files new content
+*revert
+	#revert creates new commit that undoes previous work.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
