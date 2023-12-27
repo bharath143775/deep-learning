@@ -16,3 +16,6 @@
 *Check Logs of git
 	>>git log
 	>>git log --oneline   # we can get commit id's in single line 
+*we are adding this in github to work on pull files into local
+	>>git fetch     #just loads files into repo but not reflects in working directory
+	>>git checkout origin/master    # we can use this to checkout what is happing in latest local repo
