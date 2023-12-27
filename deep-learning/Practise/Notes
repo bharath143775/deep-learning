@@ -16,3 +16,22 @@
 *Check Logs of git
 	>>git log
 	>>git log --oneline   # we can get commit id's in single line 
+*we are adding this in github to work on pull files into local
+	>>git fetch     #just loads files into repo but not reflects in working directory
+	>>git checkout origin/master    # we can use this to checkout what is happing in latest local repo
+	#fetch can be used to get files into repo,working files will not get disturbed
+	>>git fetch branch <name>
+	>>git pull   # we can use this to to pull directly into local folder, if there are no conflicts
+*check remote connections 
+	>>git remote -v
+	>>git remote add origin <URL>    # used to add remote connections
+	>>git remote rename <old> <new>    # used to rename an remote connection name 
+	>>git remote remove <name>       #remove connection in local
+*push local repo to github
+	>>git push     #we can directly if there is connection already to git
+	*if we want create files in local and new repo created in github
+		#first add connection and then push changes to github
+		>>git remote add origin <URL>
+		>>git push -u origin master/main
+	>>git branch -M <new name>    #rename current branch name to new name
+
